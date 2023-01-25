@@ -1,0 +1,73 @@
+import { StyleSheet } from "react-native";
+import {COLORS, FONTS, SIZES} from '../../../constants'
+
+
+export default StyleSheet.create({
+    global_container:{
+        height:"50%",
+        backgroundColor:COLORS.lightGray
+    },
+    container:{
+        flex:1,
+        borderBottomLeftRadius:50,
+        borderBottomRightRadius:50,
+        backgroundColor:COLORS.white
+    },
+    container_title:{
+        marginTop:SIZES.font,
+        marginHorizontal:SIZES.padding
+    },
+    inner_container_title:{
+        flexDirection:'row',
+        justifyContent:'space-between'
+    },
+    title:{
+        color:COLORS.secondary,
+        ...FONTS.body2
+    },
+    seeAll_ButtonText:{
+        color:COLORS.secondary,
+        ...FONTS.body3
+    },
+    inner_Container:{
+        flexDirection:'row',
+        height:"80%",
+        marginTop:SIZES.base,
+        margin:SIZES.padding
+    },
+    image_button_container:{
+        flex:1,
+    },
+    image_button1:{
+        flex:1,
+    },
+    images1:{
+        resizeMode:'cover',
+        width:'95%',
+        height:'97%',
+        borderRadius:20
+    },
+    image_button2:{
+        flex:1, 
+        marginTop:10
+    },
+    images2:{
+        resizeMode:'cover',
+        width:"95%",
+        height:"97%",
+        borderRadius:20
+    },
+    image_button_container2:{
+        flex:1.3
+    },
+    image_button3:{
+        flex:1,
+        marginLeft:SIZES.font
+    },
+    images3:{
+        resizeMode:'cover',
+        width:"100%",
+        height:"98.6%",
+        borderRadius:20
+    }
+})

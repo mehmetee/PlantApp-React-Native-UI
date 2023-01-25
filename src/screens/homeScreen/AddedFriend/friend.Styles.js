@@ -1,0 +1,70 @@
+import { StyleSheet } from "react-native";
+import {COLORS, FONTS, SIZES,} from '../../../constants'
+
+
+export default StyleSheet.create({
+    global_container:{
+        height:'20%',
+        backgroundColor:COLORS.lightGray
+    },
+    container:{
+        flex:1,
+        backgroundColor:COLORS.lightGray
+    },
+    body_Container:{
+        marginTop:SIZES.radius,
+        marginHorizontal:SIZES.padding
+    },
+    addedTitle:{
+        color:COLORS.secondary,
+        ...FONTS.h2
+    },
+    addedTotalText:{
+        color:COLORS.secondary,
+        ...FONTS.body3
+    },
+    inner_Container:{
+        flexDirection:'row',
+        height:60,
+    },
+    renderFriends_container:{
+        flex:1.3,
+        flexDirection:'row',
+        alignItems:'center'
+    },
+    addedNew_Container:{
+        flex:1,
+        flexDirection:"row",
+        alignItems:'center',
+        justifyContent:"flex-end"
+    },
+    addedNewText:{
+        color:COLORS.secondary,
+        ...FONTS.body3
+    },
+    addedButton:{
+        marginLeft:SIZES.base,
+        width:40,
+        height:40,
+        borderRadius:10,
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:COLORS.gray
+    },
+    addedButton_image:{
+        resizeMode:'contain',
+        width:20,
+        height:20
+    },
+    friendsContainersmall3:{
+        marginLeft:-20
+    },
+    friendsContainersmall3image:{
+        resizeMode:'cover',
+        width:50,
+        height:50,
+        borderRadius:25,
+        borderWidth:3
+    }
+
+})
